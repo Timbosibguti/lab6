@@ -17,7 +17,7 @@ CTEST(app_suite, discriminant_menshe_nulya)
     double d, x1, x2;
 
     const int koren = uravn(a, b, c, &d, &x1, &x2), ex_koren = 0;
-	const double ex_d = -48;
+    const double ex_d = -48;
 
     ASSERT_EQUAL(ex_koren, koren);
     ASSERT_DBL_NEAR(ex_d, d);
@@ -29,7 +29,7 @@ CTEST(app_suite, odin_koren)
     double d, x1, x2;
 
     const int koren = uravn(a, b, c, &d, &x1, &x2), ex_koren = 1;
-	const double ex_d = 0, ex_x1 = 1;
+    const double ex_d = 0, ex_x1 = 1;
 
     ASSERT_EQUAL(ex_koren, koren);
     ASSERT_DBL_NEAR(ex_d, d);
@@ -42,7 +42,7 @@ CTEST(app_suite, dva_kornya)
     double d, x1, x2;
     
     const int koren = uravn(a, b, c, &d, &x1, &x2), ex_koren = 2;
-	const double ex_d = 1, ex_x1 = 1, ex_x2 = 0.5;
+    const double ex_d = 1, ex_x1 = 1, ex_x2 = 0.5;
 
     ASSERT_EQUAL(ex_koren, koren);
     ASSERT_DBL_NEAR(ex_d, d);
